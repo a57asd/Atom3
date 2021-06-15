@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".playerActivity">
+
+    <Button
+        android:id="@+id/btnDraw"
+        android:layout_width="78dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:text="抽"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagePos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageName" />
+
+    <ImageView
+        android:id="@+id/imageHero1"
+        android:layout_width="522dp"
+        android:layout_height="762dp"
+
+        android:background="@drawable/hero1"
+        tools:layout_editor_absoluteX="-58dp"
+        tools:layout_editor_absoluteY="-16dp" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="英雄名"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#EDEDED"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageName" />
+
+    <ImageView
+        android:id="@+id/imageName"
+        android:layout_width="405dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="4dp"
+        android:scaleX="1.7"
+        android:scaleY="0.7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frame1" />
+
+    <ImageView
+        android:id="@+id/imagePos"
+        android:layout_width="251dp"
+        android:layout_height="310dp"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageSkillF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageName"
+        app:srcCompat="@drawable/frame2" />
+
+    <ImageView
+        android:id="@+id/imagePos2"
+        android:layout_width="124dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePos"
+        app:layout_constraintEnd_toEndOf="@+id/imagePos"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="@+id/imagePos"
+        app:layout_constraintTop_toTopOf="@+id/imagePos"
+        app:layout_constraintVertical_bias="0.505"
+        app:srcCompat="@drawable/ad1" />
+
+    <ImageView
+        android:id="@+id/imageSkill"
+        android:layout_width="119dp"
+        android:layout_height="155dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageSkill2"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/a1" />
+
+    <ImageView
+        android:id="@+id/imageSkill2"
+        android:layout_width="119dp"
+        android:layout_height="155dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/a1" />
+
+    <ImageView
+        android:id="@+id/imageSkillF"
+        android:layout_width="121dp"
+        android:layout_height="122dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSkill"
+        app:layout_constraintEnd_toEndOf="@+id/imageSkill"
+        app:layout_constraintStart_toStartOf="@+id/imageSkill"
+        app:layout_constraintTop_toTopOf="@+id/imageSkill"
+        app:srcCompat="@drawable/frame3" />
+
+    <ImageView
+        android:id="@+id/imageSkillF2"
+        android:layout_width="121dp"
+        android:layout_height="122dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSkill2"
+        app:layout_constraintEnd_toEndOf="@+id/imageSkill2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageSkill2"
+        app:layout_constraintTop_toTopOf="@+id/imageSkill2"
+        app:layout_constraintVertical_bias="0.515"
+        app:srcCompat="@drawable/frame3" />
+
+    <ImageButton
+        android:id="@+id/BtbB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_input_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/BtnSkill1"
+        android:layout_width="101dp"
+        android:layout_height="97dp"
+        android:alpha="0"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSkillF"
+        app:layout_constraintEnd_toEndOf="@+id/imageSkill"
+        app:layout_constraintStart_toStartOf="@+id/imageSkill"
+        app:layout_constraintTop_toTopOf="@+id/imageSkillF" />
+
+    <Button
+        android:id="@+id/BtnSkill2"
+        android:layout_width="101dp"
+        android:layout_height="97dp"
+        android:alpha="0"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSkillF2"
+        app:layout_constraintEnd_toEndOf="@+id/imageSkill2"
+        app:layout_constraintStart_toStartOf="@+id/imageSkill2"
+        app:layout_constraintTop_toTopOf="@+id/imageSkillF2" />
+
+    <Button
+        android:id="@+id/BtnPos"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:alpha="0"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePos2"
+        app:layout_constraintEnd_toEndOf="@+id/imagePos2"
+        app:layout_constraintStart_toStartOf="@+id/imagePos2"
+        app:layout_constraintTop_toTopOf="@+id/imagePos2" />
+
+    <Button
+        android:id="@+id/BtnHero"
+        android:layout_width="283dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="24dp"
+        android:alpha="0"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/btnDraw"
+        app:layout_constraintEnd_toEndOf="@+id/imageName"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="@+id/imageName"
+        app:layout_constraintTop_toTopOf="@+id/imageName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
